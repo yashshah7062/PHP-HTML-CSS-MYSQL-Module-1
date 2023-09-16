@@ -1,0 +1,83 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MODULE -2 | Task -1 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+====================================================================================================================================
+
+(a) SELECT FIRST_NAME FROM Employee as Employee Name;
+
+(b) SELECT first_name,joining_date from employee;
+
+(c) SELECT * FROM EMPLOYEE ORDER BY FIRST_NAME ASC, SALARY DESC;
+
+(d) SELECT * FROM EMPLOYEE WHERE FIRST_NAME LIKE '%o%';
+
+(e) SELECT * FROM EMPLOYEE WHERE TO_CHAR(JOINING_DATE,'MM')='01'
+
+(f) SELECT DEPARTMENT, SUM (SALARY) TOTAL_SALARY FROM EMPLOYEE GROUP BY DEPARTMENT ORDER BY TOTAL_SALARY DESC;
+
+(g) SELECT DEPARTMENT,MAX(SALARY) MAXSALARY FROM EMPLOYEE GROUP BY DEPARTMENT ORDER BY MAXSALARY ASC;
+
+(h) SELECT FIRST_NAME,INCENTIVE_AMT FROM employee INNER JOIN incentive ON employee.em_id=incentives.insentive_id AND INCENTIVE_AMT >3000;
+
+(i) SELECT MAX(SALARY) FROM EMPLOYEE ORDER BY SALARY DESC;
+
+(j) SELECT FIRST_NAME,INCENTIVE_AMT FROM employee LEFT JOIN incentives ON employee.em_id=incentives.em_id;
+	
+============================ OR ===========================================================================
+
+(j) SELECT FIRST_NAME,INCENTIVE_AMT FROM employee LEFT JOIN incentives ON employee.em_id=incentives.em_id WHERE incentives.incentive_amt>0;
+
+(k) CREATE VIEW user_login AS SELECT employee.first_name,employee.last_name,employee.salary FROM employee
+
+(L) To make procedure th write in this : 
+
+DELIMITER //
+	CREATE PROCEDURE highest_salary (IN int salary(20))
+	BEGIN
+ 		SELECT DEPARTMENT,MAX(SALARY) FROM EMPLOYEE GROUP BY DEPARTMENT;	
+	END //
+DELIMITER ;
+
+(M) make after insert trigger and thn write this :  >>>>>>>>>>>>> doubt <<<<<<<<<	
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MODULE -2 | Task -2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+====================================================================================================================================
+
+(a) SELECT * FROM `order` WHERE amt > 1000;
+
+(b) SELECT sname,city,comm FROM `sales person` WHERE city='LONDON' AND comm>0.10;
+
+(c) SELECT * FROM `sales person` WHERE city='barcelona' OR city='london';
+
+(d) SELECT * FROM `sales person` WHERE comm BETWEEN 0.10 AND 0.12;
+
+	======================================= OR ==============================
+
+(d) SELECT * FROM `sales person` WHERE comm > 0.10 AND comm<0.12;
+
+(e) UPDATE customer SET city = NULL,
+
+(f) SELECT ode FROM `order` WHERE ode = '1994-10-03' OR ode = '1994-10-04';
+
+(g) SELECT * from `sales person` WHERE sname = 'peel' OR sname ='motika';
+
+(h) select cname from customer where cname like '%A' OR '%B';
+
+(i) select * from customer where rating <=100;
+
+(j) select amt FROM `order` WHERE amt = NULL OR 0;
+
+(k) SELECT * FROM `customer` AS c INNER JOIN `order` AS o ON c.cnm = o.cnm;
+
+
+
+
+
+
+

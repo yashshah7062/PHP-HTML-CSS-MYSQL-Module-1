@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail Form</title>
+    <link rel="stylesheet" href="style.css">    
+   <link rel="icon" href="favicon.jpg" type="image/x-icon"/>
+</head>
+<body>
+
+    <form action="">
+
+    <pre>
+                    <img src="https://www.tops-int.com/images/TOPS-logo.png" alt="">
+    <center>                  
+        <h1 style="text-decoration: underline; font-family: sans-serif;" >PHP Assignment</h1>
+                        <b><h2 style="font-family: sans-serif; margin-top: 0px;" >Module - 2 HTML, CSS, SQL</h2></b><br>
+    </center>
+
+
+     <b> Step 1 : Your Details</b>
+       
+        <label for="name">Name  </label>&nbsp; &nbsp;<input type="text" name="name" id="name" placeholder="Your First & Last Name" class="border" required> <br>
+        <label for="email">Email  </label>  <input type="email" name="email" id="email" placeholder="Enter Your Email" required> <br>
+        <label for="phone">Phone  </label>  <input type="tel" name="phone" id="phone" placeholder="Enter Your Mobile" required> <br>
+        
+     <b> Step 2 : Delivery Address </b>
+       
+        <label for="address">Address :</label>    <Textarea name="address" id="address" placeholder="Enter Your Address Here" required></Textarea> <br>
+        <label for="postcode">Post Code :</label>  <input type="number" name="postcode" id="postcode" placeholder="Enter Your post code" required> <br>
+        <label for="country">Country :</label>    <input type="text" name="country" id="country" placeholder="Enter Your Country Here" required> <br> 
+        
+
+     <b> Step 3 : Card Details </b>
+     
+        <b>Card Type</b>
+
+            <input type="radio" Name="VISA" value="VISA" id="visa"><img src="visa.png" alt="" class="visa">VISA  
+            <input type="radio" Name="mastercard" value="Mastercard" id="mastercard"><img src="mastercard.png" alt="" class="visa">MasterCard
+            
+
+
+        <label for="number">Card Number </label>    <input type="text" name="card_no" id="card_no" placeholder="Enter Your Crad Number" required/> <br>
+        <label for="Security">Security Code </label>  <input type="varchar" name="security_code" id="security_code" placeholder="Enter Your security code" required/> <br>
+        <label for="name"></label>Name On Card    <input type="varchar" name="name_on_card" id="name_on_card" placeholder="Enter Your Name Here" required/> <br>
+
+    </pre>
+
+    <center><button class="btn">BUY IT</button></center>
+        </form>
+    </body>
+</html>
